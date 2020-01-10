@@ -1,0 +1,82 @@
+.hero {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	/* identical to box height */
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.85);
+	text-align: center;
+	margin-top: 10%;
+}
+
+.input {
+	border: 1px solid #777777;
+	width: 50%;
+
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3vmin;
+	line-height: 29px;
+	letter-spacing: 0.05em;
+	background-color: transparent;
+	margin: auto;
+	display: block;
+	padding-bottom: 1%;
+	margin-top: 6%;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.inputContainer {
+	width: 100%;
+	margin: auto;
+}
+
+.continueBtn {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px 38px 10px 38px;
+	letter-spacing: 0.05em;
+
+	color: #ffffff;
+	background: #38d39f;
+	border-radius: 6px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 160px;
+}
+
+.continueBtn:focus {
+	outline: none;
+}
+
+.previousBtn {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px 38px 10px 38px;
+	letter-spacing: 0.05em;
+
+	color: #ffffff;
+	background: #7d7d7d;
+	border-radius: 6px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	width: 160px;
+	margin-top: 3%;
+}
+
+.previousBtn:focus {
+	outline: none;
+}
+.button-container {
+	margin-top: 3%;
+}

@@ -1,0 +1,76 @@
+.Modal {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	right: 40px;
+}
+
+.push {
+	margin-top: '30px';
+}
+
+.Hero {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.85);
+	width: 339px;
+}
+.SubHero {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	/* identical to box height */
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+label {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	/* identical to box height */
+	letter-spacing: 0.05em;
+
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.description {
+	margin-left: 26px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	/* identical to box height */
+	letter-spacing: 0.05em;
+
+	color: #666666;
+}
+
+.continueBtn {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 10px 38px 10px 38px;
+	letter-spacing: 0.05em;
+
+	color: #ffffff;
+	background: #38d39f;
+	border-radius: 6px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.continueBtn:focus {
+	outline: none;
+}
+
+.item {
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
+}
