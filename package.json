@@ -1,0 +1,19 @@
+{
+  "name": "meal-prep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dayan Ramirez",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dramirez5191/meal-prep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dramirez5191/meal-prep/issues"
+  },
+  "homepage": "https://github.com/Dramirez5191/meal-prep#readme",
+  "description": ""
+}
