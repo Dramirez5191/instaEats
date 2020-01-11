@@ -15,5 +15,9 @@
     "url": "https://github.com/Dramirez5191/meal-prep/issues"
   },
   "homepage": "https://github.com/Dramirez5191/meal-prep#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^5.21.3"
+  }
 }
