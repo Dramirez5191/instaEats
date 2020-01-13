@@ -9,7 +9,7 @@
 	"test": {
 		"username": "instaEats_user",
 		"password": "instaEats_pass",
-		"database": "InstaEatsDb",
+		"database": "InstaEatsTestDb",
 		"host": "127.0.0.1",
 		"dialect": "postgres"
 	},

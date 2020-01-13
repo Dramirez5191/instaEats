@@ -10,12 +10,14 @@ router.get('/', (req, res) => {
 
 //INDEX ROUTE
 router.post('/', (req, res) => {
-	let { title, nutrients, ingredients, instructions, image, categories, diets } = req.body;
+	let { id, title, nutrients, ingredients, cuisines, instructions, image, categories, diets } = req.body;
 
 	//CREATE ROUTE
 
-	Post.create({
+	Meal.create({
+		id,
 		title,
+		cuisines,
 		nutrients,
 		ingredients,
 		instructions,
@@ -41,3 +43,4 @@ router.post('/', (req, res) => {
 // 		res.json(meal);
 // 	});
 // });
+module.exports = router;
