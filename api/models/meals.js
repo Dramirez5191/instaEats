@@ -2,7 +2,7 @@
 
 const { Model } = require('sequelize');
 
-module.exports = (sequalize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
 	class Meal extends Model {}
 
 	Meal.init(
@@ -10,7 +10,7 @@ module.exports = (sequalize, DataTypes) => {
 			title: {
 				type: DataTypes.STRING
 			},
-			description: {
+			image: {
 				type: DataTypes.STRING
 			},
 			ingredients: {
@@ -18,10 +18,19 @@ module.exports = (sequalize, DataTypes) => {
 			},
 			instructions: {
 				type: DataTypes.ARRAY(DataTypes.TEXT)
+			},
+			diets: {
+				type: DataTypes.ARRAY(DataTypes.TEXT)
+			},
+			cuisines: {
+				type: DataTypes.ARRAY(DataTypes.TEXT)
+			},
+			nutrients: {
+				type: DataTypes.ARRAY(DataTypes.TEXT)
 			}
 		},
 		{
-			sequalize,
+			sequelize,
 			modelName: 'meal'
 		}
 	);
