@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import styles from '../styles/FormRestrictionDetail.css';
 
-export class FormRestrictionDetail extends Component {
+class FormRestrictionDetail extends Component {
 	state = { term: '' };
 	continue = (e) => {
 		e.preventDefault();

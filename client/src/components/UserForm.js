@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import FormDietDetails from './FormDietDetails';
 import FormRestrictionDetails from './FormRestrictionDetail';
 import FormConfirmation from './FormConfirmation';
+import FormSuccess from './FormSuccess';
 
 export class UserForm extends Component {
 	state = {
 		step: 1,
 		diet: null,
-		exclusion: null
+		exclusion: null,
+		timeFrame: 'week'
 	};
 
 	//Proceed to next step
@@ -53,7 +55,7 @@ export class UserForm extends Component {
 			case 3:
 				return <FormConfirmation nextStep={this.nextStep} prevStep={this.prevStep} values={values} />;
 			case 4:
-				return <h1>Success</h1>;
+				return <FormSuccess />;
 		}
 	}
 }

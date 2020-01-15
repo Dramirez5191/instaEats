@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
 //INDEX ROUTE
 router.post('/', (req, res) => {
-	let { id, title, nutrients, ingredients, cuisines, instructions, image, categories, diets } = req.body;
+	let { id, title, cuisines, nutrients, ingredients, instructions, image, categories, diets } = req.body;
 
 	//CREATE ROUTE
 

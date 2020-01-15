@@ -1,18 +1,42 @@
 import React, { Component } from 'react';
-import style from '../styles/FormConfirmation.css';
-export class FormConfirmation extends Component {
-	continue = (e) => {
-		e.preventDefault();
-		//PROCESS FORM : SEND TO BACK-END
-		// this.props.nextStep();
 
-		this.props.nextStep();
+import { meals, mealInfo } from '../api/spoonacular';
+import style from '../styles/FormConfirmation.css';
+
+export class FormConfirmation extends Component {
+	state = {
+		recipes: []
+	};
+	//create a loading animation that stops when we reach the success page
+	continue = async (e) => {
+		e.preventDefault();
+		const { values: { diet, exclusion } } = this.props;
+
+		const KEY = '9cb84a72b42747bc88659dc94bb6782b';
+
+		const response = await meals.get('/generate', {
+			params: {
+				apiKey: KEY,
+				diet: diet,
+				exclude: exclusion,
+				timeFrame: 'week'
+			}
+		});
+		// this.setState({ recipes: response.data.items });
+		console.log(response.data.items[0].value.split(','));
+
+		// const mealInfo = await mealInfo.get('/informationBulk',{
+		// 		params:{
+		// 			apiKey: KEY,
+		// 			ids: this.state.recipes[0].
+		// 		}
+		// 	})
+
+		// this.props.nextStep();
 	};
 
 	back = (e) => {
 		e.preventDefault();
-		// this.props.nextStep();
-
 		this.props.prevStep();
 	};
 
@@ -25,17 +49,17 @@ export class FormConfirmation extends Component {
 					<div className="col">
 						<div className="ui raised segment">
 							<h1 className="confirmationHeader">Confirmation</h1>
-							<div class="ui middle aligned selection list listContainer">
-								<div class="item">
-									<div class="content">
-										<div class="header">Diet:</div>
-										{/* {diet ? <div>{diet}</div> : <div>Classic</div>} */}
-										{diet}
+							<div className="ui middle aligned selection list listContainer">
+								<div className="item">
+									<div className="content">
+										<div className="header">Diet:</div>
+										{diet ? <div>{diet}</div> : <div>Classic</div>}
+										{/* {diet} */}
 									</div>
 								</div>
-								<div class="item">
-									<div class="content">
-										<div class="header">Exclusions:</div>
+								<div className="item">
+									<div className="content">
+										<div className="header">Exclusions:</div>
 										{exclusion ? <div>{exclusion}</div> : <div>none</div>}
 									</div>
 								</div>
